@@ -1,0 +1,142 @@
+h1 {
+    text-align: center;
+    letter-spacing: 0.2cm;
+    font-family: 'Times New Roman';
+    font-size: 250%;
+}
+
+body {
+    background-color: rgb(120, 238, 179);
+}
+
+#titlu {
+    background-color: white;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+}
+
+#startGameButton {
+    height: 300;
+    width: 300;
+    border-radius: 50%;
+    border: 15px solid white;
+    background-color: rgb(120, 238, 179);
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 150px;
+    font-weight: bolder;
+    display: block;
+    margin: auto;
+    margin-top: 250px;
+}
+
+#addButtonContainer {
+    margin-top: auto;
+    height: 100px;
+    background-color: rgb(120, 238, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addButton1 {
+    background-color: white;
+    border: none;
+    color: black;
+    height: 80px;
+    width: 80px;
+    border-radius: 10%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia;
+    margin: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.addButton2 {
+    background-color: black;
+    border: none;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 10%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia;
+    margin: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.deadButton {
+    background-color: rgb(120, 238, 179);
+    border: none;
+    color: rgb(120, 238, 179);
+    height: 80px;
+    width: 80px;
+    border-radius: 10%;
+    margin: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#container {
+    margin-top: auto;
+    height: 100px;
+    background-color: rgb(120, 238, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.dot {
+    background-color: rgb(120, 238, 179);
+    border: 10px solid white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.dotWhite {
+    background-color: white;
+    border: 10px solid white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.dotBlack {
+    background-color: black;
+    border: 10px solid black;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#winButton {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: black;
+    height: 100px;
+    width: 500px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid white;
+    font-family: 'Times New Roman';
+}
