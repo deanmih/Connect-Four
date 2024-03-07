@@ -161,14 +161,14 @@ function checkPrimaryDiagonals(player) {
 
 function checkSecondaryDiagonals(player) {
     let secondaryDiagonalsUnified = "";
-    for (let i = 3; i < noGridRows; ++i) {
+    for (let i = noGridRows / 2; i < noGridRows; ++i) {
         for (let j = 0, k = i; k >= 0; ++j, --k) {
             secondaryDiagonalsUnified += playerPlacementGrid[k][j];
         }
         secondaryDiagonalsUnified += "|";
     }
     for (let j = 1; j < noGridColumns / 2; ++j) {
-        for (let i = 5, k = j; k < noGridColumns; --i, ++k) {
+        for (let i = noGridRows - 1, k = j; k < noGridColumns; --i, ++k) {
             secondaryDiagonalsUnified += playerPlacementGrid[i][k];
         }
         secondaryDiagonalsUnified += "|";
