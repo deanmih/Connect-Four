@@ -7,13 +7,7 @@ let foundwinner = 0;
 let winString1 = "WHITEWHITEWHITEWHITE";
 let winString2 = "BLACKBLACKBLACKBLACK";
 let drawMessage = "Draw! Click here to reset the board!";
-
-let playerPlacementGrid  = [[blank, blank, blank, blank, blank, blank, blank],
-                            [blank, blank, blank, blank, blank, blank, blank],
-                            [blank, blank, blank, blank, blank, blank, blank],
-                            [blank, blank, blank, blank, blank, blank, blank],
-                            [blank, blank, blank, blank, blank, blank, blank],
-                            [blank, blank, blank, blank, blank, blank, blank]];
+let playerPlacementGrid = [...Array(6)].map(e => Array(7).fill(blank));
 
 function newGame() {
     let titleCard = document.getElementById("titlu");
