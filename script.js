@@ -4,8 +4,6 @@ let player2 = "BLACK";
 let playerTurn = 1;
 let noPlacedTokens = 0;
 let foundwinner = 0;
-let winString1 = "WHITEWHITEWHITEWHITE";
-let winString2 = "BLACKBLACKBLACKBLACK";
 let drawMessage = "Draw! Click here to reset the board!";
 let noGridRows = 6;
 let noGridColumns = 7;
@@ -111,7 +109,7 @@ function checkLines(player) {
         for (let j = 0; j < noGridColumns; ++j) {
             lineString += playerPlacementGrid[i][j];
         }
-        if (lineString.includes(winString1) || lineString.includes(winString2)) {
+        if (lineString.includes("WHITEWHITEWHITEWHITE") || lineString.includes("BLACKBLACKBLACKBLACK")) {
             showWinner(player);
             removeAddButtons();
             ++foundwinner;
@@ -126,7 +124,7 @@ function checkColumn(player) {
         for (let i = 0; i < noGridRows; ++i) {
             columnString += playerPlacementGrid[i][j];
         }
-        if (columnString.includes(winString1) || columnString.includes(winString2)) {
+        if (columnString.includes("WHITEWHITEWHITEWHITE") || columnString.includes("BLACKBLACKBLACKBLACK")) {
             removeAddButtons();
             showWinner(player);
             ++foundwinner;
@@ -149,7 +147,7 @@ function checkPrimaryDiagonals(player) {
         }
         primaryDiagonalsUnified += "|";
     }
-    if (primaryDiagonalsUnified.includes(winString1) || primaryDiagonalsUnified.includes(winString2)) {
+    if (primaryDiagonalsUnified.includes("WHITEWHITEWHITEWHITE") || primaryDiagonalsUnified.includes("BLACKBLACKBLACKBLACK")) {
         showWinner(player);
         removeAddButtons(); 
         ++foundwinner;
@@ -173,7 +171,7 @@ function checkSecondaryDiagonals(player) {
         }
         secondaryDiagonalsUnified += "|";
     }
-    if (secondaryDiagonalsUnified.includes(winString1) || secondaryDiagonalsUnified.includes(winString2)) {
+    if (secondaryDiagonalsUnified.includes("WHITEWHITEWHITEWHITE") || secondaryDiagonalsUnified.includes("BLACKBLACKBLACKBLACK")) {
         showWinner(player);
         removeAddButtons();
         ++foundwinner; 
